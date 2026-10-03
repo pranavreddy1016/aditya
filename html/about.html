@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5f8f2;
+    color: #333;
+    line-height: 1.6;
+}
+
+nav {
+    background-color: #1b5e20;
+    padding: 15px 8%;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 35px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #c8e6c9;
+}
+
+
+/* =========================
+   ABOUT SECTION
+========================= */
+
+.about {
+    width: 85%;
+    max-width: 1100px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+
+/* Main Heading */
+
+.about h1 {
+    font-size: 45px;
+    color: #1b5e20;
+    margin-bottom: 15px;
+}
+
+.about h1::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 4px;
+    background-color: #66bb6a;
+    margin: 12px auto 30px;
+    border-radius: 5px;
+}
+
+
+/* Sub Heading */
+
+.about h2 {
+    color: #2e7d32;
+    font-size: 28px;
+    margin-top: 35px;
+    margin-bottom: 12px;
+}
+
+
+/* Paragraph */
+
+.about p {
+    max-width: 850px;
+    margin: auto;
+    font-size: 17px;
+    color: #555;
+}
+
+
+/* =========================
+   FARMER JOURNEY
+========================= */
+
+.about h2:nth-of-type(3) + p {
+    background-color: #e8f5e9;
+    padding: 20px;
+    margin-top: 15px;
+    border-radius: 10px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #1b5e20;
+}
+
+
+/* =========================
+   BENEFITS
+========================= */
+
+.about ul {
+    list-style: none;
+    margin-top: 20px;
+}
+
+.about ul li {
+    background: white;
+    margin: 10px auto;
+    padding: 12px;
+    max-width: 600px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+
+/* =========================
+   FINAL TAGLINE
+========================= */
+
+.about h3 {
+    margin-top: 50px;
+    padding: 25px;
+    background-color: #1b5e20;
+    color: white;
+    border-radius: 12px;
+    font-size: 22px;
+}
+
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
+@media (max-width: 768px) {
+
+    nav ul {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav ul li a {
+        font-size: 15px;
+    }
+
+    .about {
+        width: 90%;
+        margin-top: 35px;
+    }
+
+    .about h1 {
+        font-size: 34px;
+    }
+
+    .about h2 {
+        font-size: 24px;
+    }
+
+    .about p {
+        font-size: 16px;
+    }
+
+    .about h3 {
+        font-size: 18px;
+    }
+}
+    </style>
+</head>
+<body>
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Agricultural India</title>
+</head>
+
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="concatch.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="about">
+        <h1>About Agricultural India</h1>
+
+        <h2>Connecting Farmers Directly with Customers</h2>
+
+        <p>
+            Agricultural India is a digital agricultural marketplace
+            created to connect farmers directly with customers.
+        </p>
+
+        <h2>Our Mission</h2>
+
+        <p>
+            Our mission is to provide farmers with better opportunities
+            to showcase and sell their agricultural products online.
+        </p>
+
+        <h2>From Farmer to Customer</h2>
+
+        <p>
+            Farmer → Agricultural India → Customer
+        </p>
+
+        <h2>Our Vision</h2>
+
+        <p>
+            We aim to build a trusted digital agricultural ecosystem
+            that connects farmers, businesses and customers through technology.
+        </p>
+
+        <h2>Why Agricultural India?</h2>
+
+        <p>
+            We believe technology can help farmers reach more customers,
+            grow their businesses and create better opportunities in the
+            agricultural marketplace.
+        </p>
+
+        <h3>Empowering Farmers. Connecting Customers. Growing Agriculture.</h3>
+    </section>
+
+</body>
+</html>
+    
+</body>
+</html>
