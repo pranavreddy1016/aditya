@@ -1,0 +1,1079 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Products</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/products.css">
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <nav>
+        <ul class="navbar">
+            <li><a href="/html/index.html">Home</a></li>
+            <li><a href="/html/about.html">About</a></li>
+            <li><a href="/html/concatch.html">Contact</a></li>
+            <li><a href="/html/serves.html">Services</a></li>
+            <li><a href="/html/products.html">Products</a></li>
+            <li class="nav-item ms-lg-3">
+                <button class="btn btn-success" id="openCart">
+                    <i class="bi bi-cart3"></i>Cart
+                    <span class="badge bg-light text-success" id="cartCount">
+                        0
+                    </span>
+                </button>
+            </li>
+        </ul>
+    </nav>
+
+
+    <!-- ================= PRODUCTS ================= -->
+
+    <section class="container py-5">
+
+        <div class="text-center mb-4">
+
+            <h1 class="fw-bold">
+                Our Products
+            </h1>
+
+            <p class="text-muted">
+                Select your products and add them to cart
+            </p>
+
+        </div>
+
+        <div class="row justify-content-center mb-4">
+
+            <div class="col-md-6">
+
+                <div class="input-group">
+
+                    <span class="input-group-text">
+                        <i class="bi bi-search"></i>
+                    </span>
+
+                    <input type="text" id="searchInput" class="form-control" placeholder="Search product...">
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="text-center mb-4">
+            <button class="btn btn-success category-btn active" data-category="all">
+                All
+            </button>
+
+            <button class="btn btn-outline-success category-btn" data-category="fruits">
+                Fruits
+            </button>
+
+            <button class="btn btn-outline-success category-btn" data-category="vegetables">
+                Vegetables
+            </button>
+
+            <button class="btn btn-outline-success category-btn" data-category="seeds">
+                Seeds
+            </button>
+
+            <button class="btn btn-outline-success category-btn" data-category="herbicides">
+                Herbicide
+            </button>
+
+        </div>
+
+
+        <!-- PRODUCT GRID -->
+
+        <div class="row g-4" id="productContainer">
+
+            <!-- Fruits -->
+            <!-- APPLE -->
+            <!-- 1. Fresh Apple -->
+            <div class="col-lg-3 col-md-4 col-sm-6 product-wrapper" data-category="fruits" data-name="Apple">
+                <div class="card product-card h-100">
+                    <img src="/images/apple.jpg" class="card-img-top" alt="Fresh Apple">
+                    <div class="card-body">
+                        <h5 class="card-title">Fresh Apple</h5>
+                        <p class="text-muted">1 Kg</p>
+                        <h5 class="text-success"><i class="fa-solid fa-indian-rupee-sign"></i> 180</h5>
+                        <button class="btn btn-success w-100 add-btn" data-name="Fresh Apple" data-price="180"
+                            data-image="/images/apple.jpg">
+                            <i class="bi bi-cart-plus"></i> Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2. Fresh Banana -->
+            <div class="col-lg-3 col-md-4 col-sm-6 product-wrapper" data-category="fruits" data-name="Banana">
+                <div class="card product-card h-100">
+                    <img src="/images/banana.jpg" class="card-img-top" alt="Fresh Banana">
+                    <div class="card-body">
+                        <h5 class="card-title">Fresh Banana</h5>
+                        <p class="text-muted">1 Dozen</p>
+                        <h5 class="text-success"><i class="fa-solid fa-indian-rupee-sign"></i> 60</h5>
+                        <button class="btn btn-success w-100 add-btn" data-name="Fresh Banana" data-price="60"
+                            data-image="/images/banana.jpg">
+                            <i class="bi bi-cart-plus"></i> Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 3. Fresh Mango -->
+            <div class="col-lg-3 col-md-4 col-sm-6 product-wrapper" data-category="fruits" data-name="Mango">
+                <div class="card product-card h-100">
+                    <img src="/images/mango.jpg" class="card-img-top" alt="Fresh Mango">
+                    <div class="card-body">
+                        <h5 class="card-title">Premium Mango</h5>
+                        <p class="text-muted">1 Kg</p>
+                        <h5 class="text-success"><i class="fa-solid fa-indian-rupee-sign"></i> 120</h5>
+                        <button class="btn btn-success w-100 add-btn" data-name="Premium Mango" data-price="120"
+                            data-image="/images/mango.jpg">
+                            <i class="bi bi-cart-plus"></i> Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 4. Fresh Orange -->
+            <div class="col-lg-3 col-md-4 col-sm-6 product-wrapper" data-category="fruits" data-name="Orange">
+                <div class="card product-card h-100">
+                    <img src="/images/santri.jpg" class="card-img-top" alt="Fresh Orange">
+                    <div class="card-body">
+                        <h5 class="card-title">Fresh Orange</h5>
+                        <p class="text-muted">1 Kg</p>
+                        <h5 class="text-success"><i class="fa-solid fa-indian-rupee-sign"></i> 90</h5>
+                        <button class="btn btn-success w-100 add-btn" data-name="Fresh Orange" data-price="90"
+                            data-image="/images/santri.jpg">
+                            <i class="bi bi-cart-plus"></i> Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 5. Fresh Grapes -->
+            <div class="col-lg-3 col-md-4 col-sm-6 product-wrapper" data-category="fruits" data-name="Grapes">
+                <div class="card product-card h-100">
+                    <img src="/images/graphs.jpg" class="card-img-top" alt="Fresh Grapes">
+                    <div class="card-body">
+                        <h5 class="card-title">Sweet Grapes</h5>
+                        <p class="text-muted">500g</p>
+                        <h5 class="text-success"><i class="fa-solid fa-indian-rupee-sign"></i> 80</h5>
+                        <button class="btn btn-success w-100 add-btn" data-name="Sweet Grapes" data-price="80"
+                            data-image="/images/graphs.jpg">
+                            <i class="bi bi-cart-plus"></i> Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 6. Watermelon -->
+            <div class="col-lg-3 col-md-4 col-sm-6 product-wrapper" data-category="fruits" data-name="Watermelon">
+                <div class="card product-card h-100">
+                    <img src="/images/watermelon.jpg" class="card-img-top" alt="Watermelon">
+                    <div class="card-body">
+                        <h5 class="card-title">Fresh Watermelon</h5>
+                        <p class="text-muted">1 Pc (Approx 2-3 Kg)</p>
+                        <h5 class="text-success"><i class="fa-solid fa-indian-rupee-sign"></i> 70</h5>
+                        <button class="btn btn-success w-100 add-btn" data-name="Fresh Watermelon" data-price="70"
+                            data-image="/images/watermelon.jpg">
+                            <i class="bi bi-cart-plus"></i> Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 7. Pineapple -->
+            <div class="col-lg-3 col-md-4 col-sm-6 product-wrapper" data-category="fruits" data-name="Pineapple">
+                <div class="card product-card h-100">
+                    <img src="/images/pineaaple.jpg" class="card-img-top" alt="Pineapple">
+                    <div class="card-body">
+                        <h5 class="card-title">Fresh Pineapple</h5>
+                        <p class="text-muted">1 Pc</p>
+                        <h5 class="text-success"><i class="fa-solid fa-indian-rupee-sign"></i> 80</h5>
+                        <button class="btn btn-success w-100 add-btn" data-name="Fresh Pineapple" data-price="80"
+                            data-image="/images/pineaaple.jpg">
+                            <i class="bi bi-cart-plus"></i> Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 8. Papaya -->
+            <div class="col-lg-3 col-md-4 col-sm-6 product-wrapper" data-category="fruits" data-name="Papaya">
+                <div class="card product-card h-100">
+                    <img src="/images/papaya.jpg" class="card-img-top" alt="Papaya">
+                    <div class="card-body">
+                        <h5 class="card-title">Semi-Ripe Papaya</h5>
+                        <p class="text-muted">1 Kg</p>
+                        <h5 class="text-success"><i class="fa-solid fa-indian-rupee-sign"></i> 60</h5>
+                        <button class="btn btn-success w-100 add-btn" data-name="Semi-Ripe Papaya" data-price="60"
+                            data-image="/images/papaya.jpg">
+                            <i class="bi bi-cart-plus"></i> Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 9. Strawberry -->
+            <div class="col-lg-3 col-md-4 col-sm-6 product-wrapper" data-category="fruits" data-name="Strawberry">
+                <div class="card product-card h-100">
+                    <img src="/images/strawberry.jpg" class="card-img-top" alt="Strawberry">
+                    <div class="card-body">
+                        <h5 class="card-title">Fresh Strawberry</h5>
+                        <p class="text-muted">1 Box (200g)</p>
+                        <h5 class="text-success"><i class="fa-solid fa-indian-rupee-sign"></i> 70</h5>
+                        <button class="btn btn-success w-100 add-btn" data-name="Fresh Strawberry" data-price="70"
+                            data-image="/images/strawberry.jpg">
+                            <i class="bi bi-cart-plus"></i> Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 10. Guava -->
+            <div class="col-lg-3 col-md-4 col-sm-6 product-wrapper" data-category="fruits" data-name="Guava">
+                <div class="card product-card h-100">
+                    <img src="/images/guova.jpg" class="card-img-top" alt="Guava">
+                    <div class="card-body">
+                        <h5 class="card-title">Fresh Guava</h5>
+                        <p class="text-muted">1 Kg</p>
+                        <h5 class="text-success"><i class="fa-solid fa-indian-rupee-sign"></i> 90</h5>
+                        <button class="btn btn-success w-100 add-btn" data-name="Fresh Guava" data-price="90"
+                            data-image="/images/guova.jpg">
+                            <i class="bi bi-cart-plus"></i> Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!-- Vegetables -->
+
+            <!-- 1. Potato -->
+            <div class="col-lg-3 col-md-4 col-sm-6 product-wrapper" data-category="vegetables" data-name="Potato">
+                <div class="card product-card h-100">
+                    <img src="/images/potato.jpg" class="card-img-top" alt="Fresh Potato">
+                    <div class="card-body">
+                        <h5 class="card-title">Fresh Potato</h5>
+                        <p class="text-muted">1 Kg</p>
+                        <h5 class="text-success"><i class="fa-solid fa-indian-rupee-sign"></i> 40</h5>
+                        <button class="btn btn-success w-100 add-btn" data-name="Fresh Potato" data-price="40"
+                            data-image="/images/potato.jpg">
+                            <i class="bi bi-cart-plus"></i> Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2. Tomato -->
+            <div class="col-lg-3 col-md-4 col-sm-6 product-wrapper" data-category="vegetables" data-name="Tomato">
+                <div class="card product-card h-100">
+                    <img src="/images/tomato.jpg" class="card-img-top" alt="Fresh Tomato">
+                    <div class="card-body">
+                        <h5 class="card-title">Desi Tomato</h5>
+                        <p class="text-muted">1 Kg</p>
+                        <h5 class="text-success"><i class="fa-solid fa-indian-rupee-sign"></i> 50</h5>
+                        <button class="btn btn-success w-100 add-btn" data-name="Desi Tomato" data-price="50"
+                            data-image="/images/tomato.jpg">
+                            <i class="bi bi-cart-plus"></i> Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 3. Onion -->
+            <div class="col-lg-3 col-md-4 col-sm-6 product-wrapper" data-category="vegetables" data-name="Onion">
+                <div class="card product-card h-100">
+                    <img src="/images/onion.jpg" class="card-img-top" alt="Fresh Onion">
+                    <div class="card-body">
+                        <h5 class="card-title">Fresh Onion</h5>
+                        <p class="text-muted">1 Kg</p>
+                        <h5 class="text-success"><i class="fa-solid fa-indian-rupee-sign"></i> 60</h5>
+                        <button class="btn btn-success w-100 add-btn" data-name="Fresh Onion" data-price="60"
+                            data-image="/images/onion.jpg">
+                            <i class="bi bi-cart-plus"></i> Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 4. Carrot -->
+            <div class="col-lg-3 col-md-4 col-sm-6 product-wrapper" data-category="vegetables" data-name="Carrot">
+                <div class="card product-card h-100">
+                    <img src="/images/caroot.jpg" class="card-img-top" alt="Fresh Carrot">
+                    <div class="card-body">
+                        <h5 class="card-title">Ooty Carrot</h5>
+                        <p class="text-muted">500g</p>
+                        <h5 class="text-success"><i class="fa-solid fa-indian-rupee-sign"></i> 45</h5>
+                        <button class="btn btn-success w-100 add-btn" data-name="Ooty Carrot" data-price="45"
+                            data-image="/images/caroot.jpg">
+                            <i class="bi bi-cart-plus"></i> Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 5. Broccoli -->
+            <div class="col-lg-3 col-md-4 col-sm-6 product-wrapper" data-category="vegetables" data-name="Broccoli">
+                <div class="card product-card h-100">
+                    <img src="/images/broccoli.jpg" class="card-img-top" alt="Fresh Broccoli">
+                    <div class="card-body">
+                        <h5 class="card-title">Premium Broccoli</h5>
+                        <p class="text-muted">1 Pc (Approx 300g)</p>
+                        <h5 class="text-success"><i class="fa-solid fa-indian-rupee-sign"></i> 80</h5>
+                        <button class="btn btn-success w-100 add-btn" data-name="Premium Broccoli" data-price="80"
+                            data-image="/images/broccoli.jpg">
+                            <i class="bi bi-cart-plus"></i> Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 6. Spinach -->
+            <div class="col-lg-3 col-md-4 col-sm-6 product-wrapper" data-category="vegetables" data-name="Spinach">
+                <div class="card product-card h-100">
+                    <img src="/images/palak.jpg" class="card-img-top" alt="Fresh Spinach">
+                    <div class="card-body">
+                        <h5 class="card-title">Fresh Spinach (Palak)</h5>
+                        <p class="text-muted">1 Bunch</p>
+                        <h5 class="text-success"><i class="fa-solid fa-indian-rupee-sign"></i> 30</h5>
+                        <button class="btn btn-success w-100 add-btn" data-name="Fresh Spinach (Palak)" data-price="30"
+                            data-image="/images/palak.jpg">
+                            <i class="bi bi-cart-plus"></i> Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 7. Cucumber -->
+            <div class="col-lg-3 col-md-4 col-sm-6 product-wrapper" data-category="vegetables" data-name="Cucumber">
+                <div class="card product-card h-100">
+                    <img src="/images/kakadi.jpg" class="card-img-top" alt="Fresh Cucumber">
+                    <div class="card-body">
+                        <h5 class="card-title">Green Cucumber</h5>
+                        <p class="text-muted">1 Kg</p>
+                        <h5 class="text-success"><i class="fa-solid fa-indian-rupee-sign"></i> 50</h5>
+                        <button class="btn btn-success w-100 add-btn" data-name="Green Cucumber" data-price="50"
+                            data-image="/images/kakadi.jpg">
+                            <i class="bi bi-cart-plus"></i> Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 8. Capsicum -->
+            <div class="col-lg-3 col-md-4 col-sm-6 product-wrapper" data-category="vegetables" data-name="Capsicum">
+                <div class="card product-card h-100">
+                    <img src="/images/capcicum.jpg" class="card-img-top" alt="Green Capsicum">
+                    <div class="card-body">
+                        <h5 class="card-title">Green Capsicum</h5>
+                        <p class="text-muted">500g</p>
+                        <h5 class="text-success"><i class="fa-solid fa-indian-rupee-sign"></i> 60</h5>
+                        <button class="btn btn-success w-100 add-btn" data-name="Green Capsicum" data-price="60"
+                            data-image="/images/capcicum.jpg">
+                            <i class="bi bi-cart-plus"></i> Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 9. Cauliflower -->
+            <div class="col-lg-3 col-md-4 col-sm-6 product-wrapper" data-category="vegetables" data-name="Cauliflower">
+                <div class="card product-card h-100">
+                    <img src="/images/fulgobi.jpg" class="card-img-top" alt="Fresh Cauliflower">
+                    <div class="card-body">
+                        <h5 class="card-title">Fresh Cauliflower</h5>
+                        <p class="text-muted">1 Pc</p>
+                        <h5 class="text-success"><i class="fa-solid fa-indian-rupee-sign"></i> 45</h5>
+                        <button class="btn btn-success w-100 add-btn" data-name="Fresh Cauliflower" data-price="45"
+                            data-image="/images/fulgobi.jpg">
+                            <i class="bi bi-cart-plus"></i> Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 10. Ladyfinger -->
+            <div class="col-lg-3 col-md-4 col-sm-6 product-wrapper" data-category="vegetables" data-name="Ladyfinger">
+                <div class="card product-card h-100">
+                    <img src="/images/bhindi.jpg" class="card-img-top" alt="Fresh Ladyfinger">
+                    <div class="card-body">
+                        <h5 class="card-title">Fresh Bhindi (Okra)</h5>
+                        <p class="text-muted">500g</p>
+                        <h5 class="text-success"><i class="fa-solid fa-indian-rupee-sign"></i> 40</h5>
+                        <button class="btn btn-success w-100 add-btn" data-name="Fresh Bhindi (Okra)" data-price="40"
+                            data-image="/images/bhindi.jpg">
+                            <i class="bi bi-cart-plus"></i> Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!-- Seeds -->
+
+            <!-- 1. Wheat Seeds -->
+            <div class="col-lg-3 col-md-4 col-sm-6 product-wrapper" data-category="seeds" data-name="Wheat">
+                <div class="card product-card h-100">
+                    <img src="/images/whilt.jpg" class="card-img-top" alt="Premium Wheat Seeds">
+                    <div class="card-body">
+                        <h5 class="card-title">Premium Wheat Seeds</h5>
+                        <p class="text-muted">1 Kg Pack</p>
+                        <h5 class="text-success"><i class="fa-solid fa-indian-rupee-sign"></i> 60</h5>
+                        <button class="btn btn-success w-100 add-btn" data-name="Premium Wheat Seeds" data-price="60"
+                            data-image="/images/whilt.jpg">
+                            <i class="bi bi-cart-plus"></i> Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2. Rice Seeds -->
+            <div class="col-lg-3 col-md-4 col-sm-6 product-wrapper" data-category="seeds" data-name="Rice">
+                <div class="card product-card h-100">
+                    <img src="/images/rice.jpg" class="card-img-top" alt="Hybrid Rice Seeds">
+                    <div class="card-body">
+                        <h5 class="card-title">Hybrid Rice (Paddy) Seeds</h5>
+                        <p class="text-muted">1 Kg Pack</p>
+                        <h5 class="text-success"><i class="fa-solid fa-indian-rupee-sign"></i> 85</h5>
+                        <button class="btn btn-success w-100 add-btn" data-name="Hybrid Rice Seeds" data-price="85"
+                            data-image="/images/rice.jpg">
+                            <i class="bi bi-cart-plus"></i> Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 3. Corn Seeds -->
+            <div class="col-lg-3 col-md-4 col-sm-6 product-wrapper" data-category="seeds" data-name="Corn">
+                <div class="card product-card h-100">
+                    <img src="/images/corn_sedds.jpg" class="card-img-top" alt="Sweet Corn Seeds">
+                    <div class="card-body">
+                        <h5 class="card-title">Sweet Corn Seeds</h5>
+                        <p class="text-muted">500g Pack</p>
+                        <h5 class="text-success"><i class="fa-solid fa-indian-rupee-sign"></i> 120</h5>
+                        <button class="btn btn-success w-100 add-btn" data-name="Sweet Corn Seeds" data-price="120"
+                            data-image="/images/corn_sedds.jpg">
+                            <i class="bi bi-cart-plus"></i> Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 4. Mustard Seeds -->
+            <div class="col-lg-3 col-md-4 col-sm-6 product-wrapper" data-category="seeds" data-name="Mustard">
+                <div class="card product-card h-100">
+                    <img src="/images/Mustard seeds.jpg" class="card-img-top" alt="Black Mustard Seeds">
+                    <div class="card-body">
+                        <h5 class="card-title">Black Mustard Seeds</h5>
+                        <p class="text-muted">1 Kg Pack</p>
+                        <h5 class="text-success"><i class="fa-solid fa-indian-rupee-sign"></i> 110</h5>
+                        <button class="btn btn-success w-100 add-btn" data-name="Black Mustard Seeds" data-price="110"
+                            data-image="/images/Mustard seeds.jpg">
+                            <i class="bi bi-cart-plus"></i> Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 5. Sunflower Seeds -->
+            <div class="col-lg-3 col-md-4 col-sm-6 product-wrapper" data-category="seeds" data-name="Sunflower">
+                <div class="card product-card h-100">
+                    <img src="/images/sunflower.jpg" class="card-img-top" alt="Sunflower Seeds">
+                    <div class="card-body">
+                        <h5 class="card-title">Organic Sunflower Seeds</h5>
+                        <p class="text-muted">500g Pack</p>
+                        <h5 class="text-success"><i class="fa-solid fa-indian-rupee-sign"></i> 150</h5>
+                        <button class="btn btn-success w-100 add-btn" data-name="Organic Sunflower Seeds"
+                            data-price="150" data-image="/images/sunflower.jpg">
+                            <i class="bi bi-cart-plus"></i> Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 6. Chickpea Seeds -->
+            <div class="col-lg-3 col-md-4 col-sm-6 product-wrapper" data-category="seeds" data-name="Chickpea">
+                <div class="card product-card h-100">
+                    <img src="/images/whilt.jpg" class="card-img-top" alt="Desi Chana Seeds">
+                    <div class="card-body">
+                        <h5 class="card-title">Desi Chickpea (Chana) Seeds</h5>
+                        <p class="text-muted">1 Kg Pack</p>
+                        <h5 class="text-success"><i class="fa-solid fa-indian-rupee-sign"></i> 95</h5>
+                        <button class="btn btn-success w-100 add-btn" data-name="Desi Chickpea Seeds" data-price="95"
+                            data-image="/images/whilt.jpg">
+                            <i class="bi bi-cart-plus"></i> Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 7. Tomato Seeds -->
+            <div class="col-lg-3 col-md-4 col-sm-6 product-wrapper" data-category="seeds" data-name="Tomato Seeds">
+                <div class="card product-card h-100">
+                    <img src="/images/tomato1.jpg" class="card-img-top" alt="Hybrid Tomato Seeds">
+                    <div class="card-body">
+                        <h5 class="card-title">Hybrid Tomato Seeds</h5>
+                        <p class="text-muted">50g Small Pack</p>
+                        <h5 class="text-success"><i class="fa-solid fa-indian-rupee-sign"></i> 40</h5>
+                        <button class="btn btn-success w-100 add-btn" data-name="Hybrid Tomato Seeds" data-price="40"
+                            data-image="/images/tomato1.jpg">
+                            <i class="bi bi-cart-plus"></i> Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 8. Cotton Seeds -->
+            <div class="col-lg-3 col-md-4 col-sm-6 product-wrapper" data-category="seeds" data-name="Cotton">
+                <div class="card product-card h-100">
+                    <img src="/images/cotton-seeds.jpg" class="card-img-top" alt="High Yield Cotton Seeds">
+                    <div class="card-body">
+                        <h5 class="card-title">High Yield Cotton Seeds</h5>
+                        <p class="text-muted">450g Packet</p>
+                        <h5 class="text-success"><i class="fa-solid fa-indian-rupee-sign"></i> 450</h5>
+                        <button class="btn btn-success w-100 add-btn" data-name="High Yield Cotton Seeds"
+                            data-price="450" data-image="/images/cotton-seeds.jpg">
+                            <i class="bi bi-cart-plus"></i> Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 9. Cumin Seeds -->
+            <div class="col-lg-3 col-md-4 col-sm-6 product-wrapper" data-category="seeds" data-name="Cumin">
+                <div class="card product-card h-100">
+                    <img src="/images/jira.jpg" class="card-img-top" alt="Jeera Seeds">
+                    <div class="card-body">
+                        <h5 class="card-title">Premium Cumin (Jeera) Seeds</h5>
+                        <p class="text-muted">1 Kg Pack</p>
+                        <h5 class="text-success"><i class="fa-solid fa-indian-rupee-sign"></i> 380</h5>
+                        <button class="btn btn-success w-100 add-btn" data-name="Premium Cumin Seeds" data-price="380"
+                            data-image="/images/jira.jpg">
+                            <i class="bi bi-cart-plus"></i> Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 10. Soybean Seeds -->
+            <div class="col-lg-3 col-md-4 col-sm-6 product-wrapper" data-category="seeds" data-name="Soybean">
+                <div class="card product-card h-100">
+                    <img src="/images/soyabean.jpg" class="card-img-top" alt="Soybean Seeds">
+                    <div class="card-body">
+                        <h5 class="card-title">Soybean Seeds</h5>
+                        <p class="text-muted">1 Kg Pack</p>
+                        <h5 class="text-success"><i class="fa-solid fa-indian-rupee-sign"></i> 120</h5>
+                        <button class="btn btn-success w-100 add-btn" data-name="Soybean Seeds" data-price="120"
+                            data-image="/images/soyabean.jpg">
+                            <i class="bi bi-cart-plus"></i> Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+            <!-- 1. Glyphosate -->
+            <div class="col-lg-3 col-md-4 col-sm-6 product-wrapper" data-category="herbicides" data-name="Glyphosate">
+                <div class="card product-card h-100">
+                    <img src="/images/glyphosate.jpg" class="card-img-top" alt="Glyphosate Herbicide">
+                    <div class="card-body">
+                        <h5 class="card-title">Glyphosate 41% SL</h5>
+                        <p class="text-muted">1 Litre</p>
+                        <h5 class="text-success"><i class="fa-solid fa-indian-rupee-sign"></i> 450</h5>
+                        <button class="btn btn-success w-100 add-btn" data-name="Glyphosate 41% SL" data-price="450"
+                            data-image="/images/glyphosate.jpg">
+                            <i class="bi bi-cart-plus"></i> Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2. Atrazine -->
+            <div class="col-lg-3 col-md-4 col-sm-6 product-wrapper" data-category="herbicides" data-name="Atrazine">
+                <div class="card product-card h-100">
+                    <img src="/images/atrazine.jpg" class="card-img-top" alt="Atrazine Herbicide">
+                    <div class="card-body">
+                        <h5 class="card-title">Atrazine 50% WP</h5>
+                        <p class="text-muted">500g</p>
+                        <h5 class="text-success"><i class="fa-solid fa-indian-rupee-sign"></i> 280</h5>
+                        <button class="btn btn-success w-100 add-btn" data-name="Atrazine 50% WP" data-price="280"
+                            data-image="/images/atrazine.jpg">
+                            <i class="bi bi-cart-plus"></i> Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 3. 2,4-D Amine Salt -->
+            <div class="col-lg-3 col-md-4 col-sm-6 product-wrapper" data-category="herbicides" data-name="2,4-D">
+                <div class="card product-card h-100">
+                    <img src="/images/amine_salt.jpg" class="card-img-top" alt="2,4-D Herbicide">
+                    <div class="card-body">
+                        <h5 class="card-title">2,4-D Amine Salt 58% SL</h5>
+                        <p class="text-muted">400ml</p>
+                        <h5 class="text-success"><i class="fa-solid fa-indian-rupee-sign"></i> 320</h5>
+                        <button class="btn btn-success w-100 add-btn" data-name="2,4-D Amine Salt 58% SL"
+                            data-price="320" data-image="/images/amine_salt.jpg">
+                            <i class="bi bi-cart-plus"></i> Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 4. Pendimethalin -->
+            <div class="col-lg-3 col-md-4 col-sm-6 product-wrapper" data-category="herbicides"
+                data-name="Pendimethalin">
+                <div class="card product-card h-100">
+                    <img src="/images/pendimethalin.jpg" class="card-img-top" alt="Pendimethalin Herbicide">
+                    <div class="card-body">
+                        <h5 class="card-title">Pendimethalin 30% EC</h5>
+                        <p class="text-muted">1 Litre</p>
+                        <h5 class="text-success"><i class="fa-solid fa-indian-rupee-sign"></i> 550</h5>
+                        <button class="btn btn-success w-100 add-btn" data-name="Pendimethalin 30% EC" data-price="550"
+                            data-image="/images/pendimethalin.jpg">
+                            <i class="bi bi-cart-plus"></i> Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 5. Paraquat Dichloride -->
+            <div class="col-lg-3 col-md-4 col-sm-6 product-wrapper" data-category="herbicides" data-name="Paraquat">
+                <div class="card product-card h-100">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIkcgBbgMVzD0iX3is2QJSR7clNM8sQybqJlemuZC4vhBa96HBFm9Ujtwo&s=10" class="card-img-top" alt="Paraquat Herbicide">
+                    <div class="card-body">
+                        <h5 class="card-title">Paraquat Dichloride 24% SL</h5>
+                        <p class="text-muted">500ml</p>
+                        <h5 class="text-success"><i class="fa-solid fa-indian-rupee-sign"></i> 260</h5>
+                        <button class="btn btn-success w-100 add-btn" data-name="Paraquat Dichloride 24% SL"
+                            data-price="260" data-image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIkcgBbgMVzD0iX3is2QJSR7clNM8sQybqJlemuZC4vhBa96HBFm9Ujtwo&s=10">
+                            <i class="bi bi-cart-plus"></i> Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 6. Pretilachlor -->
+            <div class="col-lg-3 col-md-4 col-sm-6 product-wrapper" data-category="herbicides" data-name="Pretilachlor">
+                <div class="card product-card h-100">
+                    <img src="/images/pretilachlor.jpg" class="card-img-top" alt="Pretilachlor Herbicide">
+                    <div class="card-body">
+                        <h5 class="card-title">Pretilachlor 50% EC</h5>
+                        <p class="text-muted">1 Litre</p>
+                        <h5 class="text-success"><i class="fa-solid fa-indian-rupee-sign"></i> 480</h5>
+                        <button class="btn btn-success w-100 add-btn" data-name="Pretilachlor 50% EC" data-price="480"
+                            data-image="/images/pretilachlor.jpg">
+                            <i class="bi bi-cart-plus"></i> Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 7. Metribuzin -->
+            <div class="col-lg-3 col-md-4 col-sm-6 product-wrapper" data-category="herbicides" data-name="Metribuzin">
+                <div class="card product-card h-100">
+                    <img src="/images/metribuzin.jpg" class="card-img-top" alt="Metribuzin Herbicide">
+                    <div class="card-body">
+                        <h5 class="card-title">Metribuzin 70% WP</h5>
+                        <p class="text-muted">250g</p>
+                        <h5 class="text-success"><i class="fa-solid fa-indian-rupee-sign"></i> 390</h5>
+                        <button class="btn btn-success w-100 add-btn" data-name="Metribuzin 70% WP" data-price="390"
+                            data-image="/images/metribuzin.jpg">
+                            <i class="bi bi-cart-plus"></i> Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 8. Quizalofop Ethyl -->
+            <div class="col-lg-3 col-md-4 col-sm-6 product-wrapper" data-category="herbicides" data-name="Quizalofop">
+                <div class="card product-card h-100">
+                    <img src="/images/quizalofop.jpg" class="card-img-top" alt="Quizalofop Herbicide">
+                    <div class="card-body">
+                        <h5 class="card-title">Quizalofop Ethyl 5% EC</h5>
+                        <p class="text-muted">500ml</p>
+                        <h5 class="text-success"><i class="fa-solid fa-indian-rupee-sign"></i> 620</h5>
+                        <button class="btn btn-success w-100 add-btn" data-name="Quizalofop Ethyl 5% EC"
+                            data-price="620" data-image="/images/quizalofop.jpg">
+                            <i class="bi bi-cart-plus"></i> Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 9. Ammonium Glufosinate -->
+            <div class="col-lg-3 col-md-4 col-sm-6 product-wrapper" data-category="herbicides" data-name="Glufosinate">
+                <div class="card product-card h-100">
+                    <img src="/images/glufosinate.jpg" class="card-img-top" alt="Glufosinate Herbicide">
+                    <div class="card-body">
+                        <h5 class="card-title">Glufosinate Ammonium 13.5% SL</h5>
+                        <p class="text-muted">1 Litre</p>
+                        <h5 class="text-success"><i class="fa-solid fa-indian-rupee-sign"></i> 750</h5>
+                        <button class="btn btn-success w-100 add-btn" data-name="Glufosinate Ammonium 13.5% SL"
+                            data-price="750" data-image="/images/glufosinate.jpg">
+                            <i class="bi bi-cart-plus"></i> Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 10. Oxyfluorfen -->
+            <div class="col-lg-3 col-md-4 col-sm-6 product-wrapper" data-category="herbicides" data-name="Oxyfluorfen">
+                <div class="card product-card h-100">
+                    <img src="/images/oxyfluorfen.jpg" class="card-img-top" alt="Oxyfluorfen Herbicide">
+                    <div class="card-body">
+                        <h5 class="card-title">Oxyfluorfen 23.5% EC</h5>
+                        <p class="text-muted">200ml</p>
+                        <h5 class="text-success"><i class="fa-solid fa-indian-rupee-sign"></i> 340</h5>
+                        <button class="btn btn-success w-100 add-btn" data-name="Oxyfluorfen 23.5% EC" data-price="340"
+                            data-image="/images/oxyfluorfen.jpg">
+                            <i class="bi bi-cart-plus"></i> Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= CART MODAL ================= -->
+
+    <div class="modal fade" id="cartModal" tabindex="-1">
+
+        <div class="modal-dialog modal-dialog-end modal-lg">
+
+            <div class="modal-content">
+
+                <div class="modal-header">
+
+                    <h5 class="modal-title">
+                        <i class="bi bi-cart3"></i>
+                        Your Cart
+                    </h5>
+
+                    <button type="button" class="btn-close" data-bs-dismiss="modal">
+                    </button>
+
+                </div>
+
+
+                <div class="modal-body">
+
+                    <!-- CART ITEMS -->
+
+                    <div id="cartItems">
+
+                        <!-- JS will add items here -->
+
+                    </div>
+
+
+                    <!-- EMPTY CART -->
+
+                    <div id="emptyCart" class="text-center py-5">
+
+                        <i class="bi bi-cart-x fs-1 text-muted"></i>
+
+                        <h5 class="mt-3">
+                            Your cart is empty
+                        </h5>
+
+                        <p class="text-muted">
+                            Add some products first.
+                        </p>
+
+                    </div>
+
+
+                    <!-- SUMMARY -->
+
+                    <div id="cartSummary" class="border-top pt-3 mt-3">
+
+                        <div class="d-flex justify-content-between mb-2">
+
+                            <span>
+                                Subtotal
+                            </span>
+
+                            <strong id="subtotal">
+                                ₹0
+                            </strong>
+
+                        </div>
+
+
+                        <div class="d-flex justify-content-between mb-2">
+
+                            <span>
+                                Delivery Fee
+                            </span>
+
+                            <strong id="delivery">
+                                ₹20
+                            </strong>
+
+                        </div>
+
+
+                        <div class="d-flex justify-content-between fs-5">
+
+                            <strong>
+                                Total
+                            </strong>
+
+                            <strong class="text-success" id="total">
+                                ₹0
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="modal-footer">
+
+                    <button class="btn btn-secondary" data-bs-dismiss="modal">
+
+                        Continue Shopping
+
+                    </button>
+
+                    <button class="btn btn-success" id="checkoutBtn">
+
+                        Place Order
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- ================= CHECKOUT MODAL ================= -->
+
+    <div class="modal fade" id="checkoutModal" tabindex="-1">
+
+        <div class="modal-dialog">
+
+            <div class="modal-content">
+
+                <div class="modal-header">
+
+                    <h5 class="modal-title">
+                        Checkout
+                    </h5>
+
+                    <button type="button" class="btn-close" data-bs-dismiss="modal">
+                    </button>
+
+                </div>
+
+
+                <div class="modal-body">
+
+                    <form id="checkoutForm">
+
+
+                        <!-- NAME -->
+
+                        <div class="mb-3">
+
+                            <label class="form-label">
+                                Full Name
+                            </label>
+
+                            <input type="text" id="customerName" class="form-control" required>
+
+                        </div>
+
+
+                        <!-- MOBILE -->
+
+                        <div class="mb-3">
+
+                            <label class="form-label">
+                                Mobile Number
+                            </label>
+
+                            <input type="tel" id="customerPhone" class="form-control" maxlength="10" required>
+
+                        </div>
+
+
+                        <!-- ADDRESS -->
+
+                        <div class="mb-3">
+
+                            <label class="form-label">
+                                Delivery Address
+                            </label>
+
+                            <textarea id="customerAddress" class="form-control" rows="3" required></textarea>
+
+                        </div>
+
+
+                        <!-- PAYMENT -->
+
+                        <h6 class="fw-bold mb-3">
+                            Select Payment Method
+                        </h6>
+
+
+                        <div class="form-check border rounded p-3 mb-2">
+
+                            <input class="form-check-input" type="radio" name="paymentMethod" id="onlinePayment"
+                                value="online">
+
+                            <label class="form-check-label" for="onlinePayment">
+
+                                <i class="bi bi-credit-card"></i>
+
+                                Online Payment
+
+                            </label>
+
+                        </div>
+
+
+                        <div class="form-check border rounded p-3">
+
+                            <input class="form-check-input" type="radio" name="paymentMethod" id="cashPayment"
+                                value="cod">
+
+                            <label class="form-check-label" for="cashPayment">
+
+                                <i class="bi bi-cash"></i>
+
+                                Cash on Delivery
+
+                            </label>
+
+                        </div>
+
+
+                        <!-- FINAL TOTAL -->
+
+                        <div class="alert alert-success mt-3">
+
+                            <div class="d-flex justify-content-between">
+
+                                <span>
+                                    Payable Amount
+                                </span>
+
+                                <strong id="checkoutTotal">
+                                    ₹0
+                                </strong>
+
+                            </div>
+
+                        </div>
+
+
+                        <button type="submit" class="btn btn-success w-100">
+
+                            Place Order
+
+                        </button>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- ================= SUCCESS MODAL ================= -->
+
+    <div class="modal fade" id="successModal" tabindex="-1">
+
+        <div class="modal-dialog modal-dialog-centered">
+
+            <div class="modal-content">
+
+                <div class="modal-body text-center p-5">
+
+                    <i class="bi bi-check-circle-fill text-success display-1"></i>
+
+                    <h3 class="mt-3">
+                        Order Successful!
+                    </h3>
+
+                    <p id="successText" class="text-muted">
+                    </p>
+
+                    <button class="btn btn-success" data-bs-dismiss="modal">
+
+                        Continue Shopping
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- Bootstrap JS -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+    </script>
+
+
+    <!-- Razorpay Checkout -->
+
+    <script src="https://checkout.razorpay.com/v1/checkout.js">
+    </script>
+
+
+    <!-- Custom JS -->
+
+    <script src="/js/products.js">
+    </script>
+
+</body>
+
+</html>

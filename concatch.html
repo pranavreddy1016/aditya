@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>/* =========================
+   RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f8f1;
+    color: #333;
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+nav {
+    background-color: #1b5e20;
+    padding: 18px 8%;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+}
+
+.navbar {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar li a {
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.navbar li a:hover {
+    color: #c8e6c9;
+}
+
+
+/* =========================
+   CONTACT SECTION
+========================= */
+
+.contact-section {
+    min-height: calc(100vh - 65px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 20px;
+}
+
+
+/* =========================
+   CONTACT CONTAINER
+========================= */
+
+.contact-container {
+    width: 90%;
+    max-width: 1100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+
+/* =========================
+   CONTACT INFORMATION
+========================= */
+
+.contact-info {
+    background-color: #1b5e20;
+    color: white;
+    padding: 50px;
+}
+
+.contact-info h1 {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.contact-info > p {
+    font-size: 17px;
+    line-height: 1.6;
+    margin-bottom: 35px;
+    color: #e8f5e9;
+}
+
+
+/* Individual Information */
+
+.info {
+    margin-bottom: 25px;
+}
+
+.info h3 {
+    font-size: 19px;
+    margin-bottom: 5px;
+    color: #a5d6a7;
+}
+
+.info p {
+    font-size: 16px;
+    color: white;
+}
+
+
+/* =========================
+   CONTACT FORM
+========================= */
+
+.contact-form {
+    padding: 50px;
+    background-color: white;
+}
+
+.contact-form h2 {
+    font-size: 30px;
+    color: #1b5e20;
+    margin-bottom: 25px;
+}
+
+
+/* =========================
+   INPUTS
+========================= */
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 14px 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 15px;
+    outline: none;
+    font-family: inherit;
+    transition: 0.3s;
+}
+
+
+/* Input Focus */
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #2e7d32;
+    box-shadow: 0 0 5px rgba(46, 125, 50, 0.25);
+}
+
+
+/* Textarea */
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+
+/* =========================
+   BUTTON
+========================= */
+
+.contact-form button {
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    background-color: #2e7d32;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #1b5e20;
+    transform: translateY(-2px);
+}
+
+
+/* =========================
+   MOBILE RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+
+    .contact-section {
+        padding: 30px 15px;
+    }
+
+    .contact-container {
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+
+    .contact-info {
+        padding: 35px 25px;
+    }
+
+    .contact-info h1 {
+        font-size: 32px;
+    }
+
+    .contact-form {
+        padding: 35px 25px;
+    }
+
+    .contact-form h2 {
+        font-size: 25px;
+    }
+}</style>
+</head>
+
+<body>
+    <nav>
+        <ul class="navbar">
+            <li><a href="index.html">HOME</a></li>
+        </ul>
+    </nav>
+    <section class="contact-section">
+
+        <div class="contact-container">
+
+            <div class="contact-info">
+                <h1>Contact Us</h1>
+                <p>Have any questions? We would love to hear from you.</p>
+
+                <div class="info">
+                    <h3>site owner</h3>
+                    <p>shubham raut</p>
+                </div>
+                <div class="info">
+                    <h3>Phone</h3>
+                    <p>+91 85528 55458</p>
+                </div>
+
+                <div class="info">
+                    <h3>Email</h3>
+                    <p>agri@gmail.com</p>
+                </div>
+
+                <div class="info">
+                    <h3>Address</h3>
+                    <p>Karve Nagar, Pune, Maharashtra, India</p>
+                </div>
+            </div>
+
+
+            <div class="contact-form">
+
+                <h2>Send Us a Message</h2>
+
+                <form>
+
+                    <input type="text" placeholder="Your Name" required>
+
+                    <input type="email" placeholder="Your Email" required>
+
+                    <input type="text" placeholder="Subject">
+
+                    <textarea placeholder="Your Message" rows="6"></textarea>
+
+                    <button type="submit">Send Message</button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</body>
+
+</html>
