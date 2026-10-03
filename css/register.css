@@ -1,0 +1,395 @@
+/* =========================
+   RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+    background-color: #f4f8f1;
+
+    color: #333;
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+nav {
+    background-color: #1b5e20;
+
+    padding: 18px 8%;
+
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+}
+
+.navbar {
+    list-style: none;
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 30px;
+}
+
+.navbar li a {
+    text-decoration: none;
+
+    color: white;
+
+    font-size: 15px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.navbar li a:hover {
+    color: #c8e6c9;
+}
+
+
+/* =========================
+   REGISTER SECTION
+========================= */
+
+.register-section {
+    min-height: calc(100vh - 65px);
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    padding: 50px 20px;
+}
+
+
+/* =========================
+   MAIN CONTAINER
+========================= */
+
+.register-container {
+    width: 90%;
+
+    max-width: 1050px;
+
+    display: grid;
+
+    grid-template-columns: 0.9fr 1.1fr;
+
+    background-color: white;
+
+    border-radius: 15px;
+
+    overflow: hidden;
+
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+}
+
+
+/* =========================
+   LEFT SIDE
+========================= */
+
+.register-left {
+    background-color: #1b5e20;
+
+    color: white;
+
+    padding: 55px 40px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+}
+
+.register-left h1 {
+    font-size: 34px;
+
+    margin-bottom: 25px;
+}
+
+.register-left h2 {
+    font-size: 27px;
+
+    margin-bottom: 15px;
+}
+
+.register-left > p {
+    font-size: 16px;
+
+    line-height: 1.7;
+
+    color: #e8f5e9;
+
+    margin-bottom: 30px;
+}
+
+
+/* =========================
+   BENEFITS
+========================= */
+
+.benefits {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 15px;
+}
+
+.benefits p {
+    font-size: 16px;
+
+    color: #ffffff;
+}
+
+
+/* =========================
+   REGISTER BOX
+========================= */
+
+.register-box {
+    padding: 45px 50px;
+}
+
+.register-box h2 {
+    text-align: center;
+
+    font-size: 30px;
+
+    color: #1b5e20;
+
+    margin-bottom: 7px;
+}
+
+.register-text {
+    text-align: center;
+
+    color: #777;
+
+    margin-bottom: 25px;
+}
+
+
+/* =========================
+   FORM
+========================= */
+
+form {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 15px;
+}
+
+.input-group {
+    display: flex;
+
+    flex-direction: column;
+}
+
+.input-group label {
+    font-size: 14px;
+
+    font-weight: bold;
+
+    margin-bottom: 6px;
+
+    color: #444;
+}
+
+.input-group input,
+.input-group select {
+    width: 100%;
+
+    padding: 12px 14px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 7px;
+
+    outline: none;
+
+    font-size: 15px;
+
+    background-color: white;
+
+    transition: 0.3s;
+}
+
+.input-group input:focus,
+.input-group select:focus {
+    border-color: #2e7d32;
+
+    box-shadow: 0 0 5px rgba(46, 125, 50, 0.25);
+}
+
+
+/* =========================
+   TERMS
+========================= */
+
+.terms {
+    display: flex;
+
+    align-items: center;
+
+    gap: 7px;
+
+    font-size: 13px;
+
+    color: #555;
+
+    margin-top: 3px;
+}
+
+.terms input {
+    width: auto;
+}
+
+.terms a {
+    color: #2e7d32;
+
+    font-weight: bold;
+
+    text-decoration: none;
+}
+
+.terms a:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================
+   CREATE ACCOUNT BUTTON
+========================= */
+
+button {
+    width: 100%;
+
+    padding: 14px;
+
+    margin-top: 5px;
+
+    border: none;
+
+    border-radius: 7px;
+
+    background-color: #2e7d32;
+
+    color: white;
+
+    font-size: 17px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #1b5e20;
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================
+   LOGIN LINK
+========================= */
+
+.login-link {
+    text-align: center;
+
+    margin-top: 20px;
+
+    font-size: 14px;
+
+    color: #666;
+}
+
+.login-link a {
+    color: #2e7d32;
+
+    font-weight: bold;
+
+    text-decoration: none;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 800px) {
+
+    .navbar {
+        gap: 15px;
+
+        flex-wrap: wrap;
+    }
+
+    .register-container {
+        grid-template-columns: 1fr;
+    }
+
+    .register-left {
+        padding: 40px 30px;
+
+        text-align: center;
+    }
+
+    .register-left h1 {
+        font-size: 30px;
+    }
+
+    .register-left h2 {
+        font-size: 24px;
+    }
+
+    .benefits {
+        align-items: center;
+    }
+
+    .register-box {
+        padding: 40px 30px;
+    }
+}
+
+
+@media (max-width: 500px) {
+
+    .register-section {
+        padding: 25px 10px;
+    }
+
+    .register-container {
+        width: 100%;
+    }
+
+    .register-box {
+        padding: 30px 20px;
+    }
+
+    .navbar li a {
+        font-size: 13px;
+    }
+}
