@@ -1,6 +1,6 @@
 #include<stdio.h>
 int binarySearch(int arr[],int low,int high,int key){
-    if(low <= high){
+    while(low <= high){
 
         int mid=low+(high-low)/2;
 
@@ -8,10 +8,10 @@ int binarySearch(int arr[],int low,int high,int key){
             return mid;
         }
         else if(arr[mid]>key){
-            return binarySearch(arr,low,mid-1,key);
+          high = mid - 1;
         }
         else{
-            return binarySearch(arr,mid+1,high,key);
+            low = mid+1;
         }
 
 
